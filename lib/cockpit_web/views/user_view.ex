@@ -12,7 +12,7 @@ defmodule CockpitWeb.UserView do
 
   def render("user.json", %{user: user}) do
     %{id: user.id,
-      name: user.name,
+      username: user.username,
       email: user.email, 
       profile: render_one(user.profile, ProfileView, "profile.json")
     }
